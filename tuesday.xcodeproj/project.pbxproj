@@ -13,6 +13,11 @@
 		C1D82E911A43CC60003CABE9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1D82E901A43CC60003CABE9 /* Images.xcassets */; };
 		C1D82E941A43CC60003CABE9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1D82E921A43CC60003CABE9 /* LaunchScreen.xib */; };
 		C1D82EA01A43CC60003CABE9 /* tuesdayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D82E9F1A43CC60003CABE9 /* tuesdayTests.swift */; };
+		C1D82EAD1A453D0F003CABE9 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = C1D82EAC1A453D0F003CABE9 /* SRWebSocket.m */; };
+		C1D82EB01A453F3D003CABE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1D82EAF1A453F3C003CABE9 /* Foundation.framework */; };
+		C1D82EB21A453F48003CABE9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1D82EB11A453F48003CABE9 /* Security.framework */; };
+		C1D82EB41A453F53003CABE9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1D82EB31A453F53003CABE9 /* CFNetwork.framework */; };
+		C1D82EB61A453F94003CABE9 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C1D82EB51A453F94003CABE9 /* libicucore.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,14 @@
 		C1D82E991A43CC60003CABE9 /* tuesdayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tuesdayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1D82E9E1A43CC60003CABE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1D82E9F1A43CC60003CABE9 /* tuesdayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tuesdayTests.swift; sourceTree = "<group>"; };
+		C1D82EAA1A453D0F003CABE9 /* SocketRocket-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-Prefix.pch"; sourceTree = "<group>"; };
+		C1D82EAB1A453D0F003CABE9 /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
+		C1D82EAC1A453D0F003CABE9 /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
+		C1D82EAE1A453E5A003CABE9 /* tuesday-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tuesday-Bridging-Header.h"; sourceTree = "<group>"; };
+		C1D82EAF1A453F3C003CABE9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C1D82EB11A453F48003CABE9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C1D82EB31A453F53003CABE9 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		C1D82EB51A453F94003CABE9 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +56,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1D82EB61A453F94003CABE9 /* libicucore.dylib in Frameworks */,
+				C1D82EB41A453F53003CABE9 /* CFNetwork.framework in Frameworks */,
+				C1D82EB21A453F48003CABE9 /* Security.framework in Frameworks */,
+				C1D82EB01A453F3D003CABE9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +76,10 @@
 		C1D82E7B1A43CC60003CABE9 = {
 			isa = PBXGroup;
 			children = (
+				C1D82EB51A453F94003CABE9 /* libicucore.dylib */,
+				C1D82EB31A453F53003CABE9 /* CFNetwork.framework */,
+				C1D82EB11A453F48003CABE9 /* Security.framework */,
+				C1D82EAF1A453F3C003CABE9 /* Foundation.framework */,
 				C1D82E861A43CC60003CABE9 /* tuesday */,
 				C1D82E9C1A43CC60003CABE9 /* tuesdayTests */,
 				C1D82E851A43CC60003CABE9 /* Products */,
@@ -79,9 +100,11 @@
 			children = (
 				C1D82E891A43CC60003CABE9 /* AppDelegate.swift */,
 				C1D82E8B1A43CC60003CABE9 /* ViewController.swift */,
+				C1D82EAE1A453E5A003CABE9 /* tuesday-Bridging-Header.h */,
 				C1D82E8D1A43CC60003CABE9 /* Main.storyboard */,
 				C1D82E901A43CC60003CABE9 /* Images.xcassets */,
 				C1D82E921A43CC60003CABE9 /* LaunchScreen.xib */,
+				C1D82EA91A453D0F003CABE9 /* SocketRocket */,
 				C1D82E871A43CC60003CABE9 /* Supporting Files */,
 			);
 			path = tuesday;
@@ -110,6 +133,16 @@
 				C1D82E9E1A43CC60003CABE9 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C1D82EA91A453D0F003CABE9 /* SocketRocket */ = {
+			isa = PBXGroup;
+			children = (
+				C1D82EAA1A453D0F003CABE9 /* SocketRocket-Prefix.pch */,
+				C1D82EAB1A453D0F003CABE9 /* SRWebSocket.h */,
+				C1D82EAC1A453D0F003CABE9 /* SRWebSocket.m */,
+			);
+			path = SocketRocket;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1D82EAD1A453D0F003CABE9 /* SRWebSocket.m in Sources */,
 				C1D82E8C1A43CC60003CABE9 /* ViewController.swift in Sources */,
 				C1D82E8A1A43CC60003CABE9 /* AppDelegate.swift in Sources */,
 			);
@@ -339,6 +373,7 @@
 				INFOPLIST_FILE = tuesday/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "tuesday/tuesday-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -349,6 +384,7 @@
 				INFOPLIST_FILE = tuesday/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "tuesday/tuesday-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -405,6 +441,7 @@
 				C1D82EA51A43CC60003CABE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C1D82EA61A43CC60003CABE9 /* Build configuration list for PBXNativeTarget "tuesdayTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +450,7 @@
 				C1D82EA81A43CC60003CABE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
